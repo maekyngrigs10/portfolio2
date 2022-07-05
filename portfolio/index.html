@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://i.ibb.co/mvPwcjk/Untitled-design-removebg-preview-1.png">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+ 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+ 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+ 
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f5fdff;
+  display: block;
+  transition: 0.3s;
+}
+ 
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+ 
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+body{
+    background-color: #ffffff;
+}
+ 
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+ 
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="updatedaboutme.html">About Me</a>
+
+    <a href="contactmepage.html">Contact Me</a>
+    <a href="projectspage.html">Projects</a>
+  </div>
+</div>
+ 
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+ 
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+ 
+</script>
+<div class="header">
+ 
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <style>
+        .opennav{
+            float:left;
+        }
+      </style>
+    <div class="inner-header flex">
+   
+   
+ 
+    <h1>Welcome to Maekyn Grigsby</h1>
+    </div>
+   
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+   
+    </div>
+   
+    <div class="content flex">
+     
+    </div>
+    <style>
+    @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+ 
+body {
+margin:0;
+}
+ 
+h1 {
+font-family: 'Lato', sans-serif;
+font-weight:300;
+letter-spacing: 2px;
+font-size:48px;
+}
+p {
+font-family: 'Lato', sans-serif;
+letter-spacing: 1px;
+font-size:14px;
+color: #333333;
+}
+ 
+.header {
+position:relative;
+text-align:center;
+background: linear-gradient(60deg, #5271ff 0%, #004aad 100%);
+color:white;
+}
+.logo {
+width:50px;
+fill:white;
+padding-right:15px;
+display:inline-block;
+vertical-align: middle;
+}
+ 
+.inner-header {
+height:65vh;
+width:100%;
+margin: 0;
+padding: 0;
+}
+ 
+.flex { /*Flexbox for containers*/
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+ 
+.waves {
+position:relative;
+width: 100%;
+height:15vh;
+margin-bottom:-7px; /*Fix for safari gap*/
+min-height:100px;
+max-height:150px;
+}
+ 
+.content {
+position:relative;
+height:20vh;
+text-align:center;
+background-color: white;
+}
+ 
+/* Animation */
+ 
+.parallax > use {
+animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+animation-delay: -2s;
+animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+animation-delay: -3s;
+animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+animation-delay: -4s;
+animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+animation-delay: -5s;
+animation-duration: 20s;
+}
+@keyframes move-forever {
+0% {
+transform: translate3d(-90px,0,0);
+}
+100% {
+transform: translate3d(85px,0,0);
+}
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+.waves {
+height:40px;
+min-height:40px;
+}
+.content {
+height:30vh;
+}
+h1 {
+font-size:24px;
+}
+}
+</style> 
+         
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+     body {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 20px;
+     }
+     
+     #myBtn {
+       display: none;
+       position: fixed;
+       bottom: 20px;
+       right: 30px;
+       z-index: 99;
+       font-size: 18px;
+       border: none;
+       outline: none;
+       background-color: #fe6d73;
+       color: white;
+       cursor: pointer;
+       padding: 15px;
+       border-radius: 4px;
+     }
+     
+     #myBtn:hover {
+       background-color: #ffcb77;
+     }
+     
+     .about{
+        margin:50px;
+        width:500px;
+        height:100px;
+        font-size:larger;
+        font-family:monospace;
+        background-color:#004aad;
+        border:3px solid #004aad;
+        color:white;
+     }
+     .contact{
+        margin:50px;
+        width:500px;
+        height:100px;
+        font-size:larger;
+        font-family:monospace;
+        background-color:#004aad;
+        border:3px solid #004aad ;
+        color:white;
+     }
+     .contact:hover{
+        background-color:#5271ff;
+        border:3px solid #5271ff;
+     }
+     .about:hover{
+        background-color:#5271ff;
+        border:3px solid #5271ff;
+     }
+     </style>
+     </head>
+     <body>
+      <a href="updatedaboutme.html"><button class="about">About Me</button></a><a href="contactmepage.html"><button class="contact">Contact Me</button></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+     
+
+     
+     <script>
+
+     var mybutton = document.getElementById("myBtn");
+     
+
+     window.onscroll = function() {scrollFunction()};
+     
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+       } else {
+         mybutton.style.display = "none";
+       }
+     }
+     
+     function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+ 
+     </script>
+ 
+     <style>
+        h1{
+            text-align: center;
+        }
+     </style>
+</body>
+</html>
