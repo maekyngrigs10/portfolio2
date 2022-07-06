@@ -379,9 +379,6 @@ font-size:24px;
         font-size:large;
     }
 
-    div:not(.parent){
-      
-    }
     .parent {
 display: grid;
 grid-template-columns: repeat(2, 565px);
@@ -425,7 +422,14 @@ border:3px solid #527aad;
     </style>
     <script>
       $(".col").mousedown(function(event){
+        switch(event.which){
+          case 1:
+            alert('I like this color blue')
         
+        break;
+      
+        default:
+          alert('nothing');
       }
     });
     </script>
@@ -467,9 +471,7 @@ border:3px solid #527aad;
             width:840px;
             height:450px;
         }
-        div:not(.parent1){
-            
-        }
+       
         .parent1 {
 display: grid;
 grid-template-columns: repeat(4, 240px);
