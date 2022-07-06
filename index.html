@@ -238,6 +238,7 @@ font-size:24px;
      }
      
      #myBtn {
+        width:65px;
        display: none;
        position: fixed;
        bottom: 20px;
@@ -287,7 +288,59 @@ font-size:24px;
      }
      </style>
      </head>
-     <body>
+     
+        <body class="yay">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              max-width: 300px;
+              margin: auto;
+              text-align: center;
+              font-family: arial;
+            }
+            
+            .title {
+              color: grey;
+              font-size: 18px;
+            }
+            
+            button {
+              border: none;
+              outline: 0;
+              display: inline-block;
+              padding: 8px;
+              color: white;
+              background-color: #000;
+              text-align: center;
+              cursor: pointer;
+              width: 100%;
+              font-size: 18px;
+            }
+            
+            a {
+              text-decoration: none;
+              font-size: 22px;
+              color: black;
+            }
+            
+            button:hover, a:hover {
+              opacity: 0.7;
+            }
+            </style>
+            <div class="card">
+              <img src="https://i.ibb.co/wwd8MBD/pretty-1.jpg" alt="pretty-1" width="250px">
+              <h1>Maekyn Grigsby</h1>
+              <p class="title">Computer Science</p>
+              <p>New Tech Institute</p>
+              <div style="margin: 24px 0;">   
+                <a href="https://www.linkedin.com/in/maekyn-g-509081243/"><i class="fa fa-linkedin"></i></a>  
+                <a href="https://github.com/maekyngrigs10"><i class="fa fa-github"></i></a> 
+              </div>
+             
+            </div>
+            </body>
+            </html>
       <a href="updatedaboutme.html"><button class="about">About Me</button></a><a href="contactmepage.html"><button class="contact">Contact Me</button></a>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
      
